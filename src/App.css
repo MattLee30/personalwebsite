@@ -1,0 +1,46 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #285dc8;
+  color: rgb(192, 50, 50);
+}
+
+.ContactsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100vh;
+  background-color: #285dc8;
+  color: rgb(192, 50, 50);
+}
+
+/* Style for pill buttons */
+.btn-pill {
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Style for pill buttons on hover */
+.btn-pill:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Style for pill buttons when active */
+.btn-pill:active,
+.btn-pill.active {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #004275;
+}

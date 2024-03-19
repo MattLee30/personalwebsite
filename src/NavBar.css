@@ -1,0 +1,11 @@
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-link:hover,
+  .nav-link:active {
+    background-color: rgb(193, 185, 185);
+  }
