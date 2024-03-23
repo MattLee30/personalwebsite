@@ -9,8 +9,8 @@ function CollapsibleContent({ buttonLabel, content }) {
   };
 
   return (
-    <div>
-      <button type="button" className={`collapsible ${isOpen ? 'active' : ''}`} onClick={toggleContent}>
+    <div style={{ textAlign: 'center' }}>
+      <button type="button" style={{ textAlign: 'center' }} className={`collapsible ${isOpen ? 'active' : ''}`} onClick={toggleContent}>
         {buttonLabel}
       </button>
       <div className="content" style={{ display: isOpen ? 'block' : 'none' }}>

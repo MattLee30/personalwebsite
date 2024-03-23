@@ -19,7 +19,7 @@ function ResumePage() {
         <CollapsibleContent buttonLabel="MonkeyBot" content="Discord bot which, when called, would return a picture of a monkey from the PlaceMonkeys API, as well as a related fact sourced from ChatGPT. 
         Bot used Replit Database to store all previous facts for faster reference" />
         <CollapsibleContent buttonLabel="Compression Algorithm" content="Algorithm which, given a file or bitstring in basic ASCII, could compress or decompress and store by creating encoding maps
-        Decompressed text stored as Strings in Java, compressed format stored as bytes in Python; Most of algorithm built in Java, utilized Huffman Prefix Tries" />
+        Decompressed text stored as Strings in Java, compressed format stored as bytes in Python; Most of algorithm built in Java, utilized Huffman Prefix Tries" />  
         <h2> Programming Languages</h2>
         <p> C, C#, Go, Java, Javascript, Python, Swift</p>
         <h2> Tools/Game Engines</h2>
