@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Dropdown.css'; // Assuming the CSS file is in the same directory
 
-function CollapsibleContent({ buttonLabel, content }) {
+function CollapsibleContent({ buttonLabel, bulletPoints }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleContent = () => {
@@ -9,15 +9,24 @@ function CollapsibleContent({ buttonLabel, content }) {
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <button type="button" style={{ textAlign: 'center' }} className={`collapsible ${isOpen ? 'active' : ''}`} onClick={toggleContent}>
-        {buttonLabel}
-      </button>
-      <div className="content" style={{ display: isOpen ? 'block' : 'none' }}>
-        <p>{content}</p>
+    <div>
+      <div style={{ border: '2px solid black', borderRadius: '20px', maxWidth: '300px', margin: '0 auto' }}>
+        <button type="button" className={`collapsible ${isOpen ? 'active' : ''}`} onClick={toggleContent}>
+          <div style={{textAlign: 'center'}}>
+            {buttonLabel}
+          </div>
+        </button>
+        <div className="content" style={{ display: isOpen ? 'block' : 'none' }}>
+          <ul>
+            {bulletPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
 }
 
 export default CollapsibleContent;
+
