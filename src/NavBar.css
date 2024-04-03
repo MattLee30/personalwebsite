@@ -9,3 +9,29 @@
   .nav-link:active {
     background-color: rgb(193, 185, 185);
   }
+  .nav-container {
+    position: relative;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh; /* Set the height to cover half of the viewport height */
+  object-fit: cover; /* Ensure the image covers the container */
+  opacity: 0.8; /* Adjust the opacity for fading effect */
+  z-index: -1; /* Place the image behind other content */
+  transform: translateY(50%); /* Move the image up by 50% of its height */
+}
+
+.links-container {
+    position: relative; /* Ensure links are positioned relative to the container */
+    z-index: 1; /* Place links on top of the background image */
+}
+
+.nav-link {
+    color: white; /* Change link color to white for better visibility */
+    text-decoration: none; /* Remove default underline */
+    margin: 0 10px; /* Add some space between links */
+}

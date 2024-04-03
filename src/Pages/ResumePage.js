@@ -4,9 +4,13 @@ import CollapsibleContent from '../Components/CollapsibeContent.js';
 
 function ResumePage() {
     return(
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' , paddingTop: '25px'}}>
         <h1> Matthew Lee </h1> 
-        <p> Education: Loyola Marymount University - B.S. in Computer Science  (August 2021- May 2025)</p>
+        <div style={{ borderRadius: '10px', overflow: 'hidden', display: 'inline-block', border: '2px solid black', backgroundColor: '#9dc183' }}>
+            <div style={{ borderRadius: '8px', overflow: 'hidden', border: '2px solid black' }}>
+                <p> Education: Loyola Marymount University - B.S. in Computer Science  (August 2021- May 2025)</p>
+            </div>
+        </div>
         <h2> Academic Projects:</h2>
         <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap: '50px'}}>
         <CollapsibleContent buttonLabel="Minesweeper" bulletPoints={['Worked in a 2 person team to design and build an algorithm which navigates a maze to reach a goal, given information following the rules of minesweeper',
