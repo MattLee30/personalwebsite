@@ -16,10 +16,11 @@
 }
 
 .content {
-  /* padding: 10px 20% 10px 20%; */
+  border-radius: 10px; /* Add border-radius for rounded corners */
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+  padding: 10px 20%;
 }
 
 .content p {
