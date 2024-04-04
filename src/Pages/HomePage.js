@@ -1,10 +1,10 @@
 import React from 'react';
 import tattoo from '../Images/tattoo.png';
+import '../App.css';
 
 function HomePage() {
     return (
         <div>
-            <div style={{ backgroundColor: '#9dc183', height: '100px', width: '100%', position: 'absolute', top: '0', left: '0' }}></div>
             <div style={{ textAlign: 'center', paddingTop: '25px' }}>
                 <h1>
                     Welcome to the Home Page!

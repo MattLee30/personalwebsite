@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../NavBar.css'; // Assuming NavBar.css is in the same directory as NavBar.js
-import GoldenGateBanner from '../Images/GoldenGateBanner.jpeg';
 
 const NavBar = () => {
     return (
         <div className="nav-container" style={{ textAlign: 'center' }}>
-            <img src={GoldenGateBanner} alt="Golden Gate Bridge" className="background-image" />
             <div className="links-container">
                 <h1>
                     <Link to="/" className="nav-link">Home</Link> | 
