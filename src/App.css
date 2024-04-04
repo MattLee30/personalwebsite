@@ -23,8 +23,8 @@
   border-radius: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: transparent;
+  color: #007bff;
   border: 1px solid #007bff;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -33,7 +33,7 @@
 /* Style for pill buttons on hover */
 .btn-pill:hover {
   color: #fff;
-  background-color: #007bff78;
+  background-color: #007bff;
   border-color: #007bff;
 }
 
