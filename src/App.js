@@ -4,7 +4,6 @@ import HomePage from './Pages/HomePage';
 import ResumePage from './Pages/ResumePage';
 import ContactsPage from './Pages/ContactsPage';
 import NavBar from './Components/NavBar';
-import ThreeScene from './Components/ThreeScene'; // Import the ThreeScene component
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/second-page" element={<ResumePage />} />
           <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/three-scene" element={<ThreeScene />} />
         </Routes>
       </div>
     </Router>
