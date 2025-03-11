@@ -4,61 +4,45 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #9dc183;
-  padding: 5px 20px;
+  background-color: #12151c; /* Darker navy-black for strong contrast */
+  padding: 10px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  transition: all 0.3s ease-in-out;
+  height: 75px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle glow effect */
+  border-bottom: 2px solid #661b1c; /* Deep red accent border */
 }
 
 /* When scrolled, reduce navbar height */
 .nav-container.shrink {
-  padding: 0px 20px;
-  background-color: #7ca065; /* Slightly darker on shrink */
+  padding: 5px 10px;
+  background-color: #191d26; /* Slightly lighter navy */
 }
 
-/* Container for Links */
-.links-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  padding: 0 20px;
-}
-
-/* Pushes the name to the far right */
 .nav-left {
-  margin-left: auto;
-  font-size: 1.5rem;
-  transition: font-size 0.3s ease-in-out;
-  white-space: nowrap; /* Prevents wrapping */
-}
-
-/* Reduce font size when scrolled */
-.nav-container.shrink .nav-center-links {
-  font-size: 1.2rem;
-}
-
-/* Navbar Link styling */
-.nav-link {
-  text-decoration: none;
-  color: white;
-  margin: 0 10px;
-  padding: 8px 12px;
+  font-size: 1.5rem; /* Reduced font size for better alignment */
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-  border-radius: 5px;
+  color: #e1ceb6; /* Light beige for contrast */
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
 }
 
-.nav-link:hover,
-.nav-link:active {
-  background-color: rgb(193, 185, 185);
-  color: black;
+.nav-left p {
+  margin: 0;
 }
 
-/* Social Media Icons */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+/* Social Links */
 .social-links {
   display: flex;
   justify-content: flex-end;
@@ -67,27 +51,19 @@
 
 /* Ensure proper sizing for social icons */
 .social-links a {
-  color: white;
+  color: #e1ceb6;
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #4f4f4f; /* Darker color on hover */
+  color: #c03032;
 }
 
 /* Resume Box styling */
-.nav-right {
-  margin-right:auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
 .resume-box {
   display: flex;
   align-items: center;
-  background-color: #4CAF50;
+  background-color: #661b1c;
   color: white;
   padding: 8px 12px;
   font-weight: bold;
@@ -98,8 +74,8 @@
 
 .resume-box:hover,
 .resume-box:active {
-  background-color: #45a049;
-  color: black;
+  background-color: #531516; /* Darker red */
+  color: #e1ceb6; /* Light beige */
 }
 
 .resume-box svg {

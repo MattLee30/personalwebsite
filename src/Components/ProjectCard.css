@@ -1,11 +1,11 @@
 .project-card {
-  border: 2px solid #ddd;
+  border: 2px solid #661b1c; /* Deep red border */
   border-radius: 12px;
   overflow: hidden;
-  background-color: #f9f9f9;
+  background-color: #12151c; /* Dark navy */
   padding: 15px;
   text-align: center;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -22,11 +22,12 @@
 
 .project-title {
   margin-top: 10px;
-  color: #333;
+  color: #e1ceb6; /* Light beige */
   font-size: 1.2rem;
 }
 
 .project-list {
   text-align: left;
   padding-left: 15px;
+  color: #e1ceb6; /* Light beige */
 }

@@ -21,9 +21,12 @@ const NavBar = () => {
 
     return (
         <div className={`nav-container ${isShrunk ? 'shrink' : ''}`}>
-            <h1 className="nav-left">
+            {/* Name on the far left */}
+            <div className="nav-left">
                 <p><strong>Matthew Lee</strong></p>
-            </h1>
+            </div>
+    
+            {/* Social Links + Resume on the far right */}
             <div className="nav-right">
                 <div className="social-links">
                     <a href="https://github.com/MattLee30" className="nav-link" target="_blank" rel="noopener noreferrer">
@@ -42,7 +45,7 @@ const NavBar = () => {
                         <FaSteam size={30} />
                     </a>
                 </div>
-                <div className= "resume_box">
+                <div className="resume-box">
                     <Link to="/Resume.pdf" target="_blank" className="resume-box">
                         <FaFilePdf size={20} /> Resume
                     </Link>
