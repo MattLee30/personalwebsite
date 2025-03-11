@@ -1,7 +1,7 @@
 body {
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
-  background-color: #e1ceb6; /* Set background color to tan */
+  margin: 0;
+  padding: 0;
+  background-color: #e1ceb6; 
 }
 
 .HomePage {

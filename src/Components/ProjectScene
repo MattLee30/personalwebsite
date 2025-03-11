@@ -1,0 +1,50 @@
+// import React from 'react';
+// import { Canvas } from '@react-three/fiber';
+// import { useBox } from '@react-three/cannon';
+// import { useLoader } from '@react-three/drei';
+// import { TextureLoader } from 'three';
+
+// const ProjectCard3D = ({ label, image, position, rotation }) => {
+//   const [ref] = useBox(() => ({
+//     mass: 1,
+//     position,
+//     rotation,
+//   }));
+
+//   const texture = useLoader(TextureLoader, image);
+
+//   return (
+//     <mesh ref={ref}>
+//       <planeGeometry args={[3, 4]} />
+//       <meshStandardMaterial map={texture} />
+//       <text
+//         position={[0, 0, 0.1]}
+//         fontSize={0.5}
+//         color="black"
+//         anchorX="center"
+//         anchorY="middle"
+//       >
+//         {label}
+//       </text>
+//     </mesh>
+//   );
+// };
+
+// const ProjectScene = () => {
+//   return (
+//     <Canvas>
+//       <ambientLight />
+//       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+//       {/* Add ProjectCard3D components */}
+//       <ProjectCard3D
+//         label="Project 1"
+//         image="path_to_image.jpg"  // Use the appropriate image path
+//         position={[0, 0, 0]}
+//         rotation={[0, 0, 0]}
+//       />
+//       {/* Add more ProjectCard3D components as needed */}
+//     </Canvas>
+//   );
+// };
+
+// export default ProjectScene;

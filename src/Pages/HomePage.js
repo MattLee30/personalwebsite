@@ -1,46 +1,40 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Profile from '../Images/LinkedIn.jpeg';
-import '../App.css';
-import SceneInit from '../Components/SceneInit';
-import * as THREE from 'three';
+import '../App.css';  // Make sure this imports the main app CSS
+import '../Pages/HomePage.css';  // Import the new CSS for the HomePage layout
+import ProjectCard from '../Components/ProjectCard';
+import projects from '../Projects.js'; 
+// import ProjectScene from '../Components/ProjectScene';  // Import the 3D scene component
 
 function HomePage() {
-    useEffect(() => {
-        const canvasId = 'myThreeJSCanvas';
-        const canvas = document.getElementById(canvasId);
-        console.log('Canvas Element:', canvas); // Log canvas element
-        if (!canvas) {
-            console.error(`Canvas element with ID '${canvasId}' not found.`);
-            return;
-        }
-
-        const test = new SceneInit(canvasId);
-        test.initialize();
-        test.animate();
-    
-        const boxGeometry = new THREE.BoxGeometry(16, 16, 16);
-        const boxMaterial = new THREE.MeshNormalMaterial();
-        const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-    
-        test.scene.add(boxMesh);
-    }, []);
-
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <div>
-                    {/* Adjusted width and height of the canvas */}
-                    <canvas id="myThreeJSCanvas" />
+            {/* Profile and 3D Project Cards Side by Side */}
+            <div className="profile-container">
+                {/* Profile Picture */}
+                <div className="profile-picture">
+                    <img src={Profile} alt="Profile" />
                 </div>
-            </div>         
 
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
-                <div style={{ borderRadius: '50%', overflow: 'hidden', border: '4px solid black', width: '300px', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                    <img src={Profile} alt="Profile" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
+                {/* Three.js Canvas (3D project cards) */}
+                {/* <div className="threejs-canvas">
+                    <ProjectScene />
+                </div> */}
+            </div>
+
+            {/* Projects Grid (Static view) */}
+            <div className="projects-grid">
+                {projects.map((project, index) => (
+                    <ProjectCard 
+                        key={index} 
+                        label={project.label} 
+                        bulletPoints={project.bulletPoints} 
+                        image={project.image} 
+                    />
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default HomePage;
