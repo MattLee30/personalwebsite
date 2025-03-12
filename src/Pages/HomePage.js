@@ -3,6 +3,7 @@ import '../App.css';
 import '../Pages/HomePage.css';
 import ProjectCard from '../Components/ProjectCard';
 import Profile from '../Images/LinkedIn.jpeg';
+import TechBox from '../Components/TechBox.js';
 
 function HomePage() {
     const [projects, setProjects] = useState([]);
@@ -32,22 +33,31 @@ function HomePage() {
                 <div className="profile-picture">
                     <img src={Profile} alt="Profile" />
                 </div>
+                <div className="profile-text">
+                    <h1>Matthew Lee</h1>
+                    <p>Computer Science Student / Game Developer</p>
+                    <div className="education">
+                        <h1>Education</h1>
+                        <p>Loyola Marymount University 2021 - 2025</p>
+                        <p>B.S. Computer Science</p>
+                    </div>
+                </div>
             </div>
+
             <div className="tech">
                 <div className= "tech-title">
                     <h1>Technologies and Experience</h1>
                 </div>
                 <div className="tech-experience">
                     {techExperience.map((tech, index) => (
-                        <div key={index} className="tech-box">
-                            {tech}
-                        </div>
+                        <TechBox key={index} tech={tech} />
                     ))}
                 </div>
             </div>
             <div className= "projects">
                 <div className= "project-title">
                     <h1>Projects</h1>
+                    <p>(hint: drag me)</p>
                 </div>
                 <div className="projects-grid">
                 {projects.map((project, index) => {
@@ -58,6 +68,7 @@ function HomePage() {
                             label={project.label} 
                             bulletPoints={project.bulletPoints} 
                             image={projectImage} // Pass the dynamically loaded image
+                            tags={project.tags}
                         />
                     );
                 })}

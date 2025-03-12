@@ -23,7 +23,7 @@ const NavBar = () => {
         <div className={`nav-container ${isShrunk ? 'shrink' : ''}`}>
             {/* Name on the far left */}
             <div className="nav-left">
-                <p><strong>Matthew Lee</strong></p>
+                <p><strong>Matthew Lee</strong> - Personal Portfolio</p>
             </div>
     
             {/* Social Links + Resume on the far right */}

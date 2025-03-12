@@ -6,7 +6,8 @@
       "Built in Python.",
       "Used Resolution Inference and stored relevant clauses in a local database."
     ],
-    "image": "LinkedIn.jpeg"
+    "image": "LinkedIn.jpeg",
+    "tags": ["Python", "Unity"]
   },
   {
     "label": "Toxicity Filter",
@@ -40,5 +41,13 @@
       "Includes a fact sourced from ChatGPT and stores previous facts in Replit Database."
     ],
     "image": "monkeybot.jpeg"
+  },
+  {
+    "label": "Toxicity Filter",
+    "bulletPoints": [
+      "Analyzes comment text using Naive Bayes Classifiers and Logistic Regression.",
+      "Developed by a 3-person team; used Tetrad and Python."
+    ],
+    "image": "tattoo.png"
   }
 ]
