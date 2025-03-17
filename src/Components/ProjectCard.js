@@ -3,6 +3,7 @@ import '../Components/ProjectCard.css';
 import './TechBox.js';
 import TechBox from './TechBox.js';
 
+
 const ProjectCard = ({ label, bulletPoints, image, tags }) => {
     const [isFlipped, setFlipped] = useState(false);
 
