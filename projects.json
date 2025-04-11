@@ -18,13 +18,13 @@
     "image": "tattoo.png"
   },
   {
-    "label": "Sharkitect",
+    "label": "Wordle Solver",
     "bulletPoints": [
       "Modified Wordle game that determines hidden words of 2-14 letters.",
       "Built in Java.",
       "Computes edit distance and makes educated guesses (96% accuracy in under 10 attempts)."
     ],
-    "image": "Slug.jpeg"
+    "image": "wordle-solver.jpeg"
   },
   {
     "label": "Rhythm Monkey Heaven",
@@ -32,7 +32,7 @@
       "Recreated a Rhythm Heaven Fever game using JavaScript and Adobe Animate.",
       "Includes scoring, dynamic sprite animations, and music synchronization."
     ],
-    "image": "MonkeyFinal_atlas_2.png"
+    "image": "rhythm-monkey-heaven.jpeg"
   },
   {
     "label": "MonkeyBot",
