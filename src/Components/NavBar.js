@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaDiscord, FaInstagram, FaSteam, FaFilePdf } from 'react-icons/fa';  // Added FaFilePdf for the resume icon
 import '../Components/NavBar.css';
 
@@ -46,10 +45,11 @@ const NavBar = () => {
                     </a>
                 </div>
                 <div className="resume-box">
-                    <Link to="/Resume.pdf" target="_blank" className="resume-box">
+                    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-box">
                         <FaFilePdf size={20} /> Resume
-                    </Link>
+                    </a>
                 </div>
+
             </div>
         </div>
     );

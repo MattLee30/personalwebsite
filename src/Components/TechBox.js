@@ -1,9 +1,9 @@
 import React from 'react';
 import './TechBox.css';
 
-const TechBox = ({ key, tech }) => {
+const TechBox = ({tech }) => {
     return (
-        <div className="tech-box" key={key}>
+        <div className="tech-box">
             {tech}
         </div>
     );
