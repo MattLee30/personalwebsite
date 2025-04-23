@@ -6,6 +6,10 @@ import Profile from './Images/LinkedIn.jpeg';
 import TechBox from './Components/TechBox.js';
 import NavBar from './Components/NavBar'; 
 
+import P5Sketch from './Components/P5Sketch';
+import {Slime} from './p5js_sketches/Slime.js';
+import { FernSketch } from './p5js_sketches/Fern.js';
+
 
 //npm run build
 //npm run deploy
@@ -50,6 +54,9 @@ function HomePage() {
                     </div>
                 </div>
             </div>
+
+            {/* <P5Sketch sketch={FernSketch} /> */}
+            {/* <P5Sketch sketch={Slime} /> */}
 
             <div className="tech">
                 <div className="tech-title">

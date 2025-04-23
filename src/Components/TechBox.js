@@ -1,7 +1,7 @@
 import React from 'react';
 import './TechBox.css';
 
-const TechBox = ({tech }) => {
+const TechBox = ({ tech }) => {
     return (
         <div className="tech-box">
             {tech}
