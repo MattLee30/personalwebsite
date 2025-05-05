@@ -1,0 +1,34 @@
+/* Components/P5Sketch.css */
+
+.p5-sketch-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.p5-sketch-container canvas {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.sketch-reset-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #661b1c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sketch-reset-button:hover {
+  background-color: #992020;
+}
+
+.sketch-title {
+  color: #ddd;
+  margin-top: 8px;
+  font-size: 14px;
+}

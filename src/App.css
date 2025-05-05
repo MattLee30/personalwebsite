@@ -13,3 +13,22 @@ body {
   background-color: #7f4612; /* Warm brown */
   color: #e1ceb6; /* Light beige */
 }
+
+.sketch-section {
+  padding: 40px 20px;
+  background-color: #1e212b;
+  color: #e1ceb6;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sketch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}

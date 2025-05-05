@@ -1,28 +1,33 @@
-let agents = [];
-let numAgentsPerClick = 500;
-let trailMap;
-let trailData;
+export const Slime = (p, sketchRef) => {
+  let agents = [];
+  const numAgentsPerClick = 500;
+  let trailMap;
+  let trailData;
 
-export const Slime = (p) => {
+  sketchRef.current = {
+    reset: () => {
+      agents = [];
+      trailData.fill(0);
+      trailMap.clear();
+      trailMap.background(0);
+    }
+  };
+
   p.setup = () => {
-    p.createCanvas(p.windowWidth, p.windowHeight);
+    p.createCanvas(400, 400);
     p.pixelDensity(1);
-    p.width = p.windowWidth;
-    p.height = p.windowHeight;
     trailMap = p.createGraphics(p.width, p.height);
     trailMap.background(0);
-    trailData = new Float32Array(p.width * p.height).fill(0); 
+    trailData = new Float32Array(p.width * p.height).fill(0);
   };
 
   p.draw = () => {
     p.background(0);
 
-    // Update and draw agents
     for (let agent of agents) {
       agent.update();
     }
 
-    // Decay the trail over time
     for (let i = 0; i < trailData.length; i++) {
       trailData[i] *= 0.95;
     }
@@ -45,9 +50,7 @@ export const Slime = (p) => {
     if (p.mouseY > 0 && p.mouseY < p.height) {
       for (let i = 0; i < numAgentsPerClick; i++) {
         let angle = p.random(p.TWO_PI);
-        let startX = p.mouseX;
-        let startY = p.mouseY;
-        agents.push(new Agent(startX, startY, angle));
+        agents.push(new Agent(p.mouseX, p.mouseY, angle));
       }
     }
   };
