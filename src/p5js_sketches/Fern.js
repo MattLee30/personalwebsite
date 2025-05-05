@@ -18,7 +18,7 @@ export const FernSketch = (p, sketchRef) => {
   };
 
   p.setup = () => {
-    p.createCanvas(300, 400);
+    p.createCanvas(400, 400);
     p.background(255);
     p.frameRate(10); // Set a lower frame rate (30 FPS) for a slower sketch
   };

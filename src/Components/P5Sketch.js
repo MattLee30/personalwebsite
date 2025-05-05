@@ -25,7 +25,7 @@ const P5Sketch = ({ sketch, resettable = false, title }) => {
       <div className="p5-sketch-container" ref={canvasRef}></div>
       {resettable && (
         <button className="sketch-reset-button" onClick={handleReset}>
-          Rese
+          Reset
         </button>
       )}
       {title && <div className="sketch-title">{title}</div>}

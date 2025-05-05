@@ -11,6 +11,7 @@ import P5Sketch from './Components/P5Sketch';
 import { Slime } from './p5js_sketches/Slime.js';
 import { FernSketch } from './p5js_sketches/Fern.js';
 import { BallBouncer } from './p5js_sketches/BallBouncer.js';
+import { Fractal } from './p5js_sketches/Fractal.js';
 
 //npm run build
 //npm run deploy
@@ -23,7 +24,8 @@ function HomePage() {
     const sketches = [
         { sketch: Slime, title: "Slime Simulation" },
         { sketch: FernSketch, title: "Barnsley Fern" },
-        { sketch: BallBouncer, title: "BallBouncer" },
+        { sketch: BallBouncer, title: "Ball Bouncer" },
+        { sketch: Fractal, title: "Fractal" },
     ];
 
     const importImage = (imageName) => {
@@ -44,7 +46,10 @@ function HomePage() {
 
     return (
         <div>
-            <NavBar /> 
+            <div className="NavBar">
+                <NavBar />
+            </div>
+ 
             <div className="profile-container">
                 <div className="profile-picture">
                     <img src={GradPic} alt="GradPic" />

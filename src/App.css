@@ -32,3 +32,7 @@ body {
   justify-content: center;
   gap: 24px;
 }
+
+.NavBar {
+  padding-bottom: 50px;
+}
