@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';  
 import ProjectCard from './Components/ProjectCard';
 import Profile from './Images/LinkedIn.jpeg';
@@ -15,7 +15,7 @@ import { FernSketch } from './p5js_sketches/Fern.js';
 //npm run build
 //npm run deploy -- -m "Commit Message"
 
-function App() {
+function HomePage() {
     const [projects, setProjects] = useState([]);
 
     const techExperience = ["C#", "Unity", "Unreal Engine 5", "Git", "React", "Java", "Python", "Javascript", "Blender"];
@@ -36,52 +36,57 @@ function App() {
         }
     };
 
-    useEffect(() => {
-        fetch('/projects.json')
-            .then((response) => response.json())
-            .then((data) => setProjects(data))
-            .catch((error) => console.error('Error fetching projects:', error));
-    }, []);
-
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white px-4 py-8">
-            <NavBar />
-            {/* Profile Section */}
-            <div className="profile-container-glass">
-                <div className="profile-img-col">
-                    <img src={Profile} alt="Profile" className="profile-img" />
+        <div>
+            <div className="NavBar">
+                <NavBar />
+            </div>
+ 
+            <div className="profile-container">
+                <div className="profile-picture">
+                    <img src={GradPic} alt="GradPic" />
                 </div>
-                <div className="profile-divider" />
-                <div className="profile-info-col">
-                    <h1 className="profile-name">Matthew Lee</h1>
-                    <p className="profile-role">Computer Science Student / <span className="accent-role">Game Developer</span></p>
-                    <div className="profile-edu-card">
-                        <h2 className="profile-edu-title">Education</h2>
-                        <p className="profile-edu-school">Loyola Marymount University 2021 - 2025</p>
-                        <p className="profile-edu-degree">B.S. Computer Science</p>
+                <div className="profile-text">
+                    <h1>Matthew Lee</h1>
+                    <p>Computer Science Student / Game Developer</p>
+                    <div className="education">
+                        <h1>Education</h1>
+                        <p>Loyola Marymount University 2021 - 2025</p>
+                        <p>B.S. Computer Science</p>
+                        <p>M.S Candidate in Computer Science</p>
                     </div>
                 </div>
             </div>
 
-            {/* Technologies Section */}
-            <div className="max-w-4xl mx-auto mb-12">
-                <h2 className="text-3xl font-bold mb-4 text-center">Technologies and Experience</h2>
-                <div className="flex flex-wrap justify-center gap-3">
+            <div className="tech">
+                <div className="tech-title">
+                    <h1>Technologies and Experience</h1>
+                </div>
+                <div className="tech-experience">
                     {techExperience.map((tech, index) => (
-                        <span key={index} className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full font-semibold shadow-md text-sm md:text-base">
-                            {tech}
-                        </span>
+                        <TechBox key={index} tech={tech} />
                     ))}
                 </div>
             </div>
 
-            {/* Projects Section */}
-            <div className="max-w-6xl mx-auto">
-                <div className="flex flex-col items-center mb-6">
-                    <h2 className="text-3xl font-bold mb-1">Projects</h2>
-                    <p className="text-gray-400 text-sm">(hint: drag me)</p>
+            <div className="sketch-section">
+                <h1 className="section-title">Art Projects</h1>
+                <div className="sketch-grid">
+                    {sketches.map(({ sketch, title }, index) => (
+                        <P5Sketch
+                            key={index}
+                            sketch={sketch}
+                            resettable={true}
+                            title={title}
+                        />
+                    ))}
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+            {/* <div className="projects">
+                <div className="project-title">
+                    <h1>Projects</h1>
+                </div>
+                <div className="projects-grid">
                     {projects.map((project, index) => {
                         const projectImage = importImage(project.image);
                         return (
@@ -95,9 +100,9 @@ function App() {
                         );
                     })}
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
 
-export default App;
+export default HomePage;
