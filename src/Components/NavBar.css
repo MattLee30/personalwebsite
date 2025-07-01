@@ -4,30 +4,33 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #12151c;
-  padding: 10px;
+  background: rgba(24, 26, 32, 0.85);
+  backdrop-filter: blur(8px) saturate(120%);
+  padding: 18px 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(.4,0,.2,1);
   height: 75px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #661b1c; 
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  border-bottom: 2px solid #2e2e38;
 }
 
 .nav-container.shrink {
-  padding: 5px 10px;
-  background-color: #191d26; 
+  padding: 8px 0;
+  background: rgba(24, 26, 32, 0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 
 .nav-left {
-  font-size: 1.5rem; 
-  font-weight: bold;
-  color: #e1ceb6;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f5f6fa;
   display: flex;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 48px;
+  letter-spacing: 0.5px;
 }
 
 .nav-left p {
@@ -37,43 +40,54 @@
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-right: 40px;
+  gap: 28px;
+  padding-right: 48px;
 }
 
 .social-links {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 22px;
 }
 
 .social-links a {
   color: #e1ceb6;
-  transition: color 0.3s;
+  transition: color 0.2s, transform 0.2s;
+  border-radius: 50%;
+  padding: 4px;
 }
 
-.social-links a:hover {
-  color: #c03032;
+.social-links a:hover, .social-links a:focus {
+  color: #ff6b6b;
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px) scale(1.12);
+  outline: none;
 }
 
 .resume-box {
   display: flex;
   align-items: center;
-  background-color: #661b1c;
-  color: white;
-  padding: 8px 12px;
-  font-weight: bold;
-  border-radius: 5px;
+  background: linear-gradient(90deg, #661b1c 60%, #c03032 100%);
+  color: #fff;
+  padding: 9px 18px;
+  font-weight: 600;
+  border-radius: 7px;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(102,27,28,0.08);
+  font-size: 1rem;
+  margin-left: 18px;
 }
 
 .resume-box:hover,
-.resume-box:active {
-  background-color: #531516; 
-  color: #e1ceb6; 
+.resume-box:active,
+.resume-box:focus {
+  background: linear-gradient(90deg, #c03032 60%, #661b1c 100%);
+  color: #f5f6fa;
+  box-shadow: 0 4px 16px rgba(192,48,50,0.18);
+  outline: none;
 }
 
 .resume-box svg {
-  margin-right: 8px;
+  margin-right: 10px;
 }

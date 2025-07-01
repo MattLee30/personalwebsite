@@ -36,3 +36,197 @@ body {
 .NavBar {
   padding-bottom: 50px;
 }
+
+/* Profile Container Glassy Modern */
+.profile-container-glass {
+  max-width: 700px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(30, 34, 44, 0.82);
+  backdrop-filter: blur(10px) saturate(120%);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2.5rem 2.5rem 2rem;
+  gap: 2.5rem;
+  position: relative;
+}
+@media (max-width: 900px) {
+  .profile-container-glass {
+    flex-direction: column;
+    padding: 2rem 1.2rem;
+    gap: 1.5rem;
+  }
+  .profile-divider {
+    display: none;
+  }
+}
+.profile-img-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  object-fit: cover;
+  background: #23242b;
+}
+.profile-divider {
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(180deg, #661b1c 0%, #c03032 100%);
+  border-radius: 2px;
+  margin: 0 1.5rem;
+}
+.profile-info-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+.profile-name {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  color: #f5f6fa;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+.profile-role {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #e1ceb6;
+  margin-bottom: 1.1rem;
+}
+.accent-role {
+  color: #ff6b6b;
+  font-weight: 700;
+}
+.profile-edu-card {
+  background: rgba(102,27,28,0.13);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(102,27,28,0.08);
+  padding: 1.1rem 1.5rem;
+  margin-top: 0.2rem;
+  min-width: 220px;
+}
+.profile-edu-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f5f6fa;
+  margin-bottom: 0.3rem;
+}
+.profile-edu-school, .profile-edu-degree {
+  font-size: 1rem;
+  color: #e1ceb6;
+  margin-bottom: 0.1rem;
+}
+
+/* Technologies Section */
+.max-w-4xl {
+  max-width: 56rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #3b82f6, #a21caf);
+}
+.from-blue-500 {
+  --tw-gradient-from: #3b82f6;
+}
+.to-purple-500 {
+  --tw-gradient-to: #a21caf;
+}
+.text-white {
+  color: #fff;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.md\:text-base {
+  font-size: 1rem;
+}
+
+/* Projects Section */
+.max-w-6xl {
+  max-width: 72rem;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.text-gray-400 {
+  color: #9ca3af;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.sm\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.lg\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gap-8 {
+  gap: 2rem;
+}

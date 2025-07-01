@@ -44,12 +44,9 @@ const NavBar = () => {
                         <FaSteam size={30} />
                     </a>
                 </div>
-                <div className="resume-box">
-                    <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-box">
-                        <FaFilePdf size={20} /> Resume
-                    </a>
-                </div>
-
+                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-box">
+                    <FaFilePdf size={20} /> Resume
+                </a>
             </div>
         </div>
     );
