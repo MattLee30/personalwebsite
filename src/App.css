@@ -247,3 +247,85 @@ body {
   color: #e1ceb6;
   margin-bottom: 0.1rem;
 }
+
+/* --- Colorful Accents and Enhancements (Dialed Back) --- */
+
+.section-title, .project-title, .tech-title {
+  position: relative;
+  display: inline-block;
+  color: #e1ceb6;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  text-fill-color: initial;
+  margin-bottom: 0.5em;
+}
+
+.section-title::after, .project-title::after, .tech-title::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  margin: 0.3em auto 0 auto;
+  background: linear-gradient(90deg, #661b1c 60%, #c03032 100%);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.projects, .tech {
+  border: none;
+  box-shadow: 0 4px 24px rgba(30,34,44,0.10);
+}
+
+.projects-grid {
+  gap: 32px;
+}
+
+/* ProjectCard accent border (subtle) */
+.flip-card {
+  border: 1.5px solid #2e2e38;
+  box-shadow: 0 8px 32px rgba(30,34,44,0.10), 0 1.5px 6px rgba(102,27,28,0.08);
+}
+
+.flip-card-container:hover {
+  box-shadow: 0 0 0 2px #c0303233;
+}
+
+/* TechBox subtle accent */
+.tech-box {
+  background: #23242b;
+  color: #f5f6fa;
+  border-radius: 999px;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  font-size: 1em;
+  box-shadow: 0 2px 8px rgba(30,34,44,0.10);
+  margin: 0.2em;
+  border: 1.5px solid #c03032;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.tech-box:hover {
+  background: #35374a;
+  color: #f5f6fa;
+  box-shadow: 0 4px 16px #c0303244;
+}
+
+/* Colored divider between sections (subtle) */
+.colored-divider {
+  width: 80%;
+  height: 4px;
+  margin: 2.5em auto 2em auto;
+  background: linear-gradient(90deg, #661b1c 60%, #c03032 100%);
+  border-radius: 3px;
+  opacity: 0.4;
+}
+
+/* Resume button keeps accent */
+.resume-box {
+  box-shadow: 0 0 0 2px #ff6b6b22, 0 2px 8px rgba(192,48,50,0.10);
+}
+.resume-box:hover, .resume-box:focus {
+  box-shadow: 0 0 0 4px #ff6b6b44, 0 4px 16px #c0303222;
+}

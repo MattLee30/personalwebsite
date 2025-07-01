@@ -36,6 +36,13 @@ function HomePage() {
         }
     };
 
+    React.useEffect(() => {
+        fetch('/projects.json')
+            .then((response) => response.json())
+            .then((data) => setProjects(data))
+            .catch((error) => console.error('Error fetching projects:', error));
+    }, []);
+
     return (
         <div>
             <div className="NavBar">
@@ -52,8 +59,7 @@ function HomePage() {
                     <div className="education">
                         <h1>Education</h1>
                         <p>Loyola Marymount University 2021 - 2025</p>
-                        <p>B.S. Computer Science</p>
-                        <p>M.S Candidate in Computer Science</p>
+                        <p>B.S. Computer Science // M.S Candidate in Computer Science </p>
                     </div>
                 </div>
             </div>
