@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.437ad3ba.css",
-    "main.js": "/personalwebsite/static/js/main.17b0931c.js",
+    "main.css": "/personalwebsite/static/css/main.c6f7fcf6.css",
+    "main.js": "/personalwebsite/static/js/main.90233b0b.js",
     "static/js/453.55c3503c.chunk.js": "/personalwebsite/static/js/453.55c3503c.chunk.js",
     "static/media/tattoo.png": "/personalwebsite/static/media/tattoo.3d90c932239cd206eb9d.png",
     "static/media/GraduationPic.JPG": "/personalwebsite/static/media/GraduationPic.66371ea4ec7af804a7d5.JPG",
     "static/media/LinkedIn.jpeg": "/personalwebsite/static/media/LinkedIn.072a86a8ddf7d213fcba.jpeg",
     "index.html": "/personalwebsite/index.html",
-    "main.437ad3ba.css.map": "/personalwebsite/static/css/main.437ad3ba.css.map",
-    "main.17b0931c.js.map": "/personalwebsite/static/js/main.17b0931c.js.map",
+    "main.c6f7fcf6.css.map": "/personalwebsite/static/css/main.c6f7fcf6.css.map",
+    "main.90233b0b.js.map": "/personalwebsite/static/js/main.90233b0b.js.map",
     "453.55c3503c.chunk.js.map": "/personalwebsite/static/js/453.55c3503c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.437ad3ba.css",
-    "static/js/main.17b0931c.js"
+    "static/css/main.c6f7fcf6.css",
+    "static/js/main.90233b0b.js"
   ]
 }
