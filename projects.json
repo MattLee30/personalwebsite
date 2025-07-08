@@ -1,49 +1,32 @@
 [
   {
-    "label": "Minesweeper",
+    "label": "GOAP Agent",
     "bulletPoints": [
-      "Designed an algorithm that navigates a maze using Minesweeper rules.",
-      "Built in Python.",
-      "Used Resolution Inference and stored relevant clauses in a local database."
+      "Goal-Oriented Action Planning Agent which is able to play a recreation of the game Fireboy and Watergirl.",
+      "Built in C#",
+      "Able to dynamically react and plan actions based on player input and game states."
     ],
-    "image": "LinkedIn.jpeg",
-    "tags": ["Python", "Unity"]
+    "image": "LinkedIn.jpeg"
   },
   {
-    "label": "Toxicity Filter",
+    "label": "Sharkitect",
     "bulletPoints": [
-      "Analyzes comment text using Naive Bayes Classifiers and Logistic Regression.",
-      "Developed by a 3-person team; used Tetrad and Python."
+      "Neat game physics engine"
     ],
-    "image": "tattoo.png",
-    "tags": ["Python", "Tetrad"]
+    "image": "LinkedIn.jpeg"
   },
   {
-    "label": "Wordle Solver",
+    "label": "EVE",
     "bulletPoints": [
-      "Modified Wordle game that determines hidden words of 2-14 letters.",
-      "Built in Java.",
-      "Computes edit distance and makes educated guesses (96% accuracy in under 10 attempts)."
+      "Beep bop boop"
     ],
-    "image": "wordle-solver.jpeg",
-    "tags": ["Java"]
+    "image": "tattoo.png"
   },
   {
-    "label": "Rhythm Monkey Heaven",
+    "label": "Recipe Website",
     "bulletPoints": [
-      "Recreated a Rhythm Heaven Fever game using JavaScript and Adobe Animate.",
-      "Includes scoring, dynamic sprite animations, and music synchronization."
+      "Beep bop boop"
     ],
-    "image": "rhythm-monkey-heaven.jpeg",
-    "tags": ["JavaScript", "Adobe Animate"]
-  },
-  {
-    "label": "MonkeyBot",
-    "bulletPoints": [
-      "Discord bot that returns a monkey image from PlaceMonkeys API.",
-      "Includes a fact sourced from ChatGPT and stores previous facts in Replit Database."
-    ],
-    "image": "monkeybot.jpeg",
-    "tags": ["Discord", "Replit", "API"]
+    "image": "tattoo.png"
   }
 ]

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/personalwebsite/static/css/main.969f5fd0.css",
-    "main.js": "/personalwebsite/static/js/main.7a8fd46c.js",
-    "static/js/453.55c3503c.chunk.js": "/personalwebsite/static/js/453.55c3503c.chunk.js",
-    "static/media/tattoo.png": "/personalwebsite/static/media/tattoo.3d90c932239cd206eb9d.png",
-    "static/media/GraduationPic.JPG": "/personalwebsite/static/media/GraduationPic.66371ea4ec7af804a7d5.JPG",
-    "static/media/LinkedIn.jpeg": "/personalwebsite/static/media/LinkedIn.072a86a8ddf7d213fcba.jpeg",
-    "index.html": "/personalwebsite/index.html",
-    "main.969f5fd0.css.map": "/personalwebsite/static/css/main.969f5fd0.css.map",
-    "main.7a8fd46c.js.map": "/personalwebsite/static/js/main.7a8fd46c.js.map",
-    "453.55c3503c.chunk.js.map": "/personalwebsite/static/js/453.55c3503c.chunk.js.map"
+    "main.css": "./static/css/main.8359839e.css",
+    "main.js": "./static/js/main.3a86345c.js",
+    "static/js/453.55c3503c.chunk.js": "./static/js/453.55c3503c.chunk.js",
+    "static/media/tattoo.png": "./static/media/tattoo.3d90c932239cd206eb9d.png",
+    "static/media/GraduationPic.JPG": "./static/media/GraduationPic.66371ea4ec7af804a7d5.JPG",
+    "static/media/LinkedIn.jpeg": "./static/media/LinkedIn.072a86a8ddf7d213fcba.jpeg",
+    "index.html": "./index.html",
+    "main.8359839e.css.map": "./static/css/main.8359839e.css.map",
+    "main.3a86345c.js.map": "./static/js/main.3a86345c.js.map",
+    "453.55c3503c.chunk.js.map": "./static/js/453.55c3503c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.969f5fd0.css",
-    "static/js/main.7a8fd46c.js"
+    "static/css/main.8359839e.css",
+    "static/js/main.3a86345c.js"
   ]
 }
