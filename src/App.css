@@ -51,11 +51,11 @@ body {
   text-align: center; 
   margin-bottom: 32px;
   width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 32px 24px;
   border-radius: 18px;
   background: rgba(30, 34, 44, 0.72);
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 2px solid #661b1c;
 }
 
 .project-title {
@@ -71,8 +71,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
   width: 100%; 
-  margin: auto;
-  padding-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
   justify-items: center; 
   align-items: start; 
 }
@@ -284,7 +284,6 @@ body {
 
 /* ProjectCard accent border (subtle) */
 .flip-card {
-  border: 1.5px solid #2e2e38;
   box-shadow: 0 8px 32px rgba(30,34,44,0.10), 0 1.5px 6px rgba(102,27,28,0.08);
 }
 

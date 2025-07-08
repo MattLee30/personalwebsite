@@ -37,7 +37,7 @@ function HomePage() {
     };
 
     React.useEffect(() => {
-        fetch('/projects.json')
+        fetch(`${process.env.PUBLIC_URL}/projects.json`)
             .then((response) => response.json())
             .then((data) => setProjects(data))
             .catch((error) => console.error('Error fetching projects:', error));
@@ -75,6 +75,20 @@ function HomePage() {
                 </div>
             </div>
 
+            <div className="projects">
+                <h1 className="section-title">Projects</h1>
+                <div className="projects-grid">
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            label={project.label}
+                            bulletPoints={project.bulletPoints}
+                            image={importImage(project.image)}
+                        />
+                    ))}
+                </div>
+            </div>
+
             <div className="sketch-section">
                 <h1 className="section-title">Art Projects</h1>
                 <div className="sketch-grid">
@@ -88,25 +102,7 @@ function HomePage() {
                     ))}
                 </div>
             </div>
-            {/* <div className="projects">
-                <div className="project-title">
-                    <h1>Projects</h1>
-                </div>
-                <div className="projects-grid">
-                    {projects.map((project, index) => {
-                        const projectImage = importImage(project.image);
-                        return (
-                            <ProjectCard 
-                                key={index} 
-                                label={project.label} 
-                                bulletPoints={project.bulletPoints} 
-                                image={projectImage}
-                                tags={project.tags}
-                            />
-                        );
-                    })}
-                </div>
-            </div> */}
+
         </div>
     );
 }

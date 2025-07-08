@@ -5,8 +5,9 @@
   align-items: center;
   perspective: 1400px;
   cursor: pointer;
-  margin-bottom: 40px;
   transition: transform 0.2s;
+  width: 100%;
+  max-width: 320px;
 }
 
 .flip-card-container:hover {
@@ -14,7 +15,8 @@
 }
 
 .flip-card {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 400px;
   position: relative;
   transform-style: preserve-3d;
@@ -101,15 +103,4 @@
 
 .project-list li {
   margin-bottom: 7px;
-}
-
-.project-tags {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 8px;
-  margin-bottom: 2px;
-  flex-wrap: wrap;
-  width: 100%;
-  min-height: 32px;
 }

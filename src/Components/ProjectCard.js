@@ -4,7 +4,7 @@ import './TechBox.js';
 import TechBox from './TechBox.js';
 
 
-const ProjectCard = ({ label, bulletPoints, image, tags }) => {
+const ProjectCard = ({ label, bulletPoints, image }) => {
     const [isFlipped, setFlipped] = useState(false);
 
     const handleFlip = () => {
@@ -18,11 +18,6 @@ const ProjectCard = ({ label, bulletPoints, image, tags }) => {
 
                     <div className="project-card-front">
                         <img src={image} alt={label} className="project-image" />
-                        <div className="project-tags">
-                            {Array.isArray(tags) && tags.map((tag, index) => (
-                                <TechBox key={index} tech={tag} />
-                            ))}
-                        </div>
                         <h3 className="project-title">{label}</h3>
                     </div>
                     

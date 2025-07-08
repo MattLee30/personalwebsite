@@ -47,7 +47,7 @@ export const Slime = (p, sketchRef) => {
   };
 
   p.mouseClicked = () => {
-    if (p.mouseY > 0 && p.mouseY < p.height) {
+    if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
       for (let i = 0; i < numAgentsPerClick; i++) {
         let angle = p.random(p.TWO_PI);
         agents.push(new Agent(p.mouseX, p.mouseY, angle));
