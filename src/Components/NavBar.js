@@ -44,7 +44,7 @@ const NavBar = () => {
                         <FaSteam size={30} />
                     </a>
                 </div>
-                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-box">
+                <a href={process.env.PUBLIC_URL + '/Resume.pdf'} target="_blank" rel="noopener noreferrer" className="resume-box">
                     <FaFilePdf size={20} /> Resume
                 </a>
             </div>

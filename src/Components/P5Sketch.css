@@ -1,15 +1,32 @@
 /* Components/P5Sketch.css */
 
-.p5-sketch-wrapper {
+.p5-sketch-card-front {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  justify-content: center;
+  padding: 18px 16px 12px 16px;
+  background: none;
+}
+
+.p5-sketch-container {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .p5-sketch-container canvas {
+  width: 100% !important;
+  height: 180px !important;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border: 2px solid #191d26;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  object-fit: cover;
+  background: #191d26;
 }
 
 .sketch-reset-button {

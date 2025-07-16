@@ -69,7 +69,7 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
+  gap: 48px 32px;
   width: 100%; 
   max-width: 1200px;
   margin: 0 auto;
@@ -327,4 +327,116 @@ body {
 }
 .resume-box:hover, .resume-box:focus {
   box-shadow: 0 0 0 4px #ff6b6b44, 0 4px 16px #c0303222;
+}
+
+.more-info-slot {
+  margin: 32px auto;
+  min-height: 80px;
+  border: 2px dashed #661b1c;
+  border-radius: 12px;
+  background: #23242b;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e1ceb6;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(102,27,28,0.08);
+}
+
+.more-info-slot:hover, .more-info-slot:focus {
+  background: #2e2e38;
+  border-color: #c03032;
+}
+
+.more-info-dropdown {
+  background: #191d26;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  animation: dropdown-fade-in 0.3s;
+}
+
+@keyframes dropdown-fade-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.projects-dragspace-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.projects-list-column {
+  flex: 1 1 340px;
+  max-width: 380px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #661b1c #23242b;
+}
+
+.projects-list-column::-webkit-scrollbar {
+  width: 8px;
+  background: #23242b;
+}
+.projects-list-column::-webkit-scrollbar-thumb {
+  background: #661b1c;
+  border-radius: 6px;
+}
+
+.projects-grid.one-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.dragspace-column {
+  flex: 1 1 400px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.more-info-slot {
+  width: 100%;
+  min-width: 320px;
+  max-width: 400px;
+  min-height: 300px;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .projects-dragspace-layout {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .projects-list-column, .dragspace-column {
+    max-width: 100%;
+    min-width: 0;
+    align-items: center;
+  }
+  .projects-grid.one-column {
+    align-items: center;
+  }
+  .more-info-slot {
+    min-width: 0;
+    max-width: 100%;
+  }
 }

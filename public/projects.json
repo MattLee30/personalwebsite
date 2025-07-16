@@ -28,5 +28,25 @@
       "Beep bop boop"
     ],
     "image": "tattoo.png"
+  },
+  {
+    "type": "p5js",
+    "label": "Slime Simulation",
+    "bulletPoints": [
+      "Interactive slime mold simulation using p5.js.",
+      "Click to spawn agents.",
+      "Features agent-based modeling and trail following."
+    ],
+    "sketchName": "Slime"
+  },
+  {
+    "type": "p5js",
+    "label": "Barnsley Fern",
+    "bulletPoints": [
+      "Fractal generation using iterated function systems.",
+      "Draws the famous Barnsley Fern in real time.",
+      "Built with p5.js."
+    ],
+    "sketchName": "FernSketch"
   }
 ]

@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import p5 from 'p5';
 import './P5Sketch.css';
 
-const P5Sketch = ({ sketch, resettable = false, title }) => {
+const P5Sketch = ({ sketch, resettable = false }) => {
   const canvasRef = useRef(null);
   const sketchRef = useRef(null);
   const [sketchInstance, setSketchInstance] = useState(null);
@@ -21,14 +21,13 @@ const P5Sketch = ({ sketch, resettable = false, title }) => {
   };
 
   return (
-    <div className="p5-sketch-wrapper">
+    <div className="p5-sketch-card-front">
       <div className="p5-sketch-container" ref={canvasRef}></div>
       {resettable && (
         <button className="sketch-reset-button" onClick={handleReset}>
           Reset
         </button>
       )}
-      {title && <div className="sketch-title">{title}</div>}
     </div>
   );
 };
