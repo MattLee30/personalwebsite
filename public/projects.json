@@ -1,33 +1,23 @@
 [
   {
+    "label": "Neural Network Visualizer",
+    "bulletPoints": [
+      "Sandbox visualization of Convolutional Neural Networks",
+      "Allows users to create and modify classic neural network architecture",
+      "Compiles and runs modified architectures with the click of a button",
+      "Built in Unity",
+      "Credit to Seb Lague for the original concept + implementation."
+    ],
+    "sketchName": "Visualizer"
+  },
+  {
     "label": "GOAP Agent",
     "bulletPoints": [
       "Goal-Oriented Action Planning Agent which is able to play a recreation of the game Fireboy and Watergirl.",
       "Built in C#",
       "Able to dynamically react and plan actions based on player input and game states."
     ],
-    "image": "LinkedIn.jpeg"
-  },
-  {
-    "label": "Sharkitect",
-    "bulletPoints": [
-      "Neat game physics engine"
-    ],
-    "image": "LinkedIn.jpeg"
-  },
-  {
-    "label": "EVE",
-    "bulletPoints": [
-      "Beep bop boop"
-    ],
-    "image": "tattoo.png"
-  },
-  {
-    "label": "Recipe Website",
-    "bulletPoints": [
-      "Beep bop boop"
-    ],
-    "image": "tattoo.png"
+    "image": "GoapAgentImage.png"
   },
   {
     "type": "p5js",
