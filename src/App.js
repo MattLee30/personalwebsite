@@ -23,6 +23,8 @@ const techExperience = [
   'Python',
   'Javascript',
   'Blender',
+  'Jira',
+  'SQL'
 ];
 
 const education = [

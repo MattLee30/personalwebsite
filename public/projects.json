@@ -20,6 +20,16 @@
     "image": "GoapAgentImage.png"
   },
   {
+    "label": "Python Web-Crawler",
+    "bulletPoints": [
+      "Web crawling tool built in Python using Playwright MCP",
+      "Capable of scraping and parsing Amazon content given user input",
+      "Features customizable scraping rules and data extraction."
+    ],
+    "image": "MCP.png"
+  },
+  
+  {
     "type": "p5js",
     "label": "Slime Simulation",
     "bulletPoints": [

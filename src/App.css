@@ -382,9 +382,10 @@ body {
 }
 
 .projects-list-column {
-  flex: 1 1 340px;
-  max-width: 380px;
-  min-width: 320px;
+  /* reduce width to give more room to details pane */
+  flex: 0 1 280px;
+  max-width: 320px;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -412,19 +413,22 @@ body {
 }
 
 .dragspace-column {
-  flex: 1 1 400px;
-  min-width: 340px;
+  flex: 2 1 600px;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  /* occupy most of viewport height to give room for taller content */
+  height: 80vh;
 }
 
 .more-info-slot {
   width: 100%;
   min-width: 320px;
-  max-width: 400px;
-  min-height: 300px;
+  max-width: 600px;
+  /* grow taller so the description area stretches vertically */
+  min-height: 60vh;
   margin-top: 0;
 }
 
@@ -435,7 +439,7 @@ body {
 .more-info-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* center the title horizontally */
   width: 100%;
   background: transparent;
   border: none;
@@ -444,7 +448,7 @@ body {
   cursor: pointer;
   padding: 0;
   margin-bottom: 8px;
-  text-align: left;
+  text-align: center;
 }
 
 .more-info-header:focus-visible {
@@ -465,6 +469,10 @@ body {
   border-radius: 8px;
   padding: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center sketch windows and images */
+  text-align: center;
 }
 
 .more-info-image {
