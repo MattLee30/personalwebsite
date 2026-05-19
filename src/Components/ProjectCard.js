@@ -19,25 +19,24 @@ const ProjectCard = ({ label, bulletPoints, image, draggable, onDragStart, onDra
             style={{ cursor: draggable ? 'grab' : 'pointer' }}
         >
             <div className={`flip-card${isFlipped && flippable ? ' flipped' : ''}`}>
-                <div className="project-card-inner">
-                    <div className="project-card-front">
-                        {p5SketchComponent ? (
-                            p5SketchComponent
-                        ) : (
-                            <img src={image} alt={label} className="project-image" />
-                        )}
-                        <h3 className="project-title">{label}</h3>
-                    </div>
-                    {flippable && (
-                        <div className="project-card-back">
-                            <ul className="project-list">
-                                {bulletPoints.map((point, index) => (
-                                    <li key={index}>{point}</li>
-                                ))}
-                            </ul>
-                        </div>
+                <div className="project-card-front">
+                    {p5SketchComponent ? (
+                        p5SketchComponent
+                    ) : (
+                        <img src={image} alt={label} className="project-image" />
                     )}
+                    <h3 className="project-title">{label}</h3>
+                    {flippable && <span className="flip-hint">↕ flip</span>}
                 </div>
+                {flippable && (
+                    <div className="project-card-back">
+                        <ul className="project-list">
+                            {bulletPoints.map((point, index) => (
+                                <li key={index}>{point}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
             </div>
         </div>
     );

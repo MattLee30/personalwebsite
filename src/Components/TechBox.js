@@ -1,5 +1,4 @@
 import React from 'react';
-import './TechBox.css';
 
 const TechBox = ({ tech }) => {
     return (
