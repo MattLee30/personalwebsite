@@ -1,14 +1,22 @@
 [
   {
-    "label": "Neural Network Visualizer",
+    "label": "Hybrid Rendering Thesis",
     "bulletPoints": [
-      "Sandbox visualization of Convolutional Neural Networks",
-      "Allows users to create and modify classic neural network architecture",
-      "Compiles and runs modified architectures with the click of a button",
-      "Built in Unity",
-      "Credit to Seb Lague for the original concept + implementation."
+      "Master's Thesis which describes how one can leverage spherical harmonics and light probes as a basis for a hybrid-rendered shader",
+      "Boasts a stabler framerate (p95) than a pure dynamic shader by ~3ms"
     ],
-    "sketchName": "Visualizer"
+    "image": "Hybrid.png"
+  },
+  {
+    "type": "p5js",
+    "label": "Slime Simulation",
+    "bulletPoints": [
+      "Click to interact!",
+      "Interactive slime mold simulation using p5.js.",
+      "Click to spawn agents.",
+      "Features agent-based modeling and trail following."
+    ],
+    "sketchName": "Slime"
   },
   {
     "label": "GOAP Agent",
@@ -20,14 +28,13 @@
     "image": "GoapAgentImage.png"
   },
   {
-    "type": "p5js",
-    "label": "Slime Simulation",
+    "label": "Python Web-Crawler",
     "bulletPoints": [
-      "Interactive slime mold simulation using p5.js.",
-      "Click to spawn agents.",
-      "Features agent-based modeling and trail following."
+      "Web crawling tool built in Python using Playwright MCP",
+      "Capable of scraping and parsing Amazon content given user input",
+      "Features customizable scraping rules and data extraction."
     ],
-    "sketchName": "Slime"
+    "image": "MCP.png"
   },
   {
     "type": "p5js",
